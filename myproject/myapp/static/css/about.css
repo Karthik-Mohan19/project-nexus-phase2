@@ -1,0 +1,155 @@
+.aboutMain{
+    background: linear-gradient(15deg,
+    rgb(1, 8, 17),
+    rgba(8, 77, 206, 0.932),
+    rgb(1, 8, 17)
+    );
+    padding: 10%;
+    transition: background 0.5s ease-in-out;
+    
+}
+.aboutMain h2{
+    font-size: 60px;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+.aboutMain h4{
+    font-size: 30px;
+    text-align: center;
+}
+.aboutWelcomePage{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutWelcomePage div{
+    width: 40%;
+    margin: 4% 2%;
+}
+.aboutWelcomePage div h3{
+    margin: 2%;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.aboutWelcomePage div p{
+    color: rgb(198, 198, 199);
+    font-size: 20px;
+    font-family: serif;
+    margin: 2%;
+}
+.aboutWelcomePage div img{
+    height: 500px;
+    width: 500px;
+}
+.aboutTestimonials{
+    font-size: 30px;
+    color: rgba(8, 77, 206, 0.932);
+    text-align: center;
+}
+.aboutContact{
+    font-size: 25px;
+    padding: 4% 2%;
+    margin: 10% 0% 5% 0;
+    text-align: center;
+    background: url(../images/contact_page2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.aboutContactButton{
+    text-decoration: none;
+    color: snow;
+    background-color: rgba(28, 92, 209, 0.932);
+    border-radius: 12px;
+    padding: 1%;
+    transition: all 0.3s ease-in-out;
+}
+.aboutContactButton:hover{
+    background-color: rgba(14, 63, 153, 0.932);
+}
+
+@media (max-width:480px),(min-width: 481px) and (max-width: 768px),(min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    
+    .aboutMain h2{
+        font-size: 30px;
+    }
+    .aboutMain h4{
+        font-size: 20px;
+    }
+    .aboutWelcomePage{
+        display: block;
+    }
+    .aboutWelcomePage div{
+        width: 90%;
+        margin: 4% 2%;
+    }
+    .aboutWelcomePage div h3{
+        margin: 2%;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    .aboutWelcomePage div p{
+        color: rgb(198, 198, 199);
+        font-size: 20px;
+        font-family: serif;
+        margin: 2%;
+    }
+    .aboutWelcomePage div img{
+        height: auto;
+        width: 90%;
+    }
+    .aboutContact{
+        font-size: 20px;
+    }
+    .aboutContactButton{
+        font-size: 18px;
+    }
+    .aboutContactButton:hover{
+        background-color: rgba(14, 63, 153, 0.932);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px),(min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    
+    .aboutMain h2{
+        font-size: 60px;
+    }
+    .aboutMain h4{
+        font-size: 40px;
+    }
+    .aboutWelcomePage{
+        display: block;
+    }
+    .aboutWelcomePage div{
+        width: 90%;
+        margin: 4% 2%;
+    }
+    .aboutWelcomePage div h3{
+        margin: 2%;
+        font-size: 40px;
+        font-family: sans-serif;
+    }
+    .aboutWelcomePage div p{
+        color: rgb(198, 198, 199);
+        font-size: 20px;
+        font-family: serif;
+        margin: 2%;
+    }
+    .aboutWelcomePage div img{
+        height: auto;
+        width: 60%;
+    }
+    .aboutContact{
+        font-size: 25px;
+    }
+    .aboutContactButton{
+        font-size: 20px;
+    }
+    .aboutContactButton:hover{
+        background-color: rgba(14, 63, 153, 0.932);
+    }
+}
+
+@media  (min-width: 992px) and (max-width: 1199.98px) {
+    .aboutWelcomePage{
+        display: flex;
+    }
+}

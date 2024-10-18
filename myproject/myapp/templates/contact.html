@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Techy Software Industry - Get in Touch</title>
+  <meta name="description" content="Get in touch with Techy Software Industry. We're here to answer any questions and help you with our software solutions." />
+
+  <meta property="og:title" content="Contact Techy Software Industry" />
+  <meta property="og:description" content="Reach out to our team for inquiries about our software services and how we can support your business." />
+  <meta property="og:image" content="https://yourwebsite.com/images/contact-page.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com/contact" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar">
+            <div><img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="logo"></div>
+            <nav class="menu">
+                <ul id="menubar" class="menubar">
+                    <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                    <li><a href="{% url 'about' %}" class="a">ABOUT US</a></li>
+                    <li><a href="{% url 'service' %}" class="a">SERVICES</a></li>
+                    <li><a href="#" class="a">CONTACT</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div><a href="" class="navButton">Get a Quote</a></div>
+        </nav>
+        <nav class="aboutMain">
+            <h2>CONTACT US</h2>
+            <h4>Let’s start a conversation! Reach out, and let’s create something amazing together.</h4>
+        </nav>
+        <nav class="contactMain">
+            <div>
+                <h3>Get In Touch</h3>
+                <p>Get the Business Software Service That Your Company Needs</p>
+                <form action="addData" method="POST" autocomplete="off">
+                    {% csrf_token %}
+                    <fieldset >
+                        <legend>NAME</legend>
+                        <input type="text" name="name" id="" placeholder="Name" required>
+                    </fieldset>
+                    <fieldset >
+                        <legend>EMAIL</legend>
+                        <input type="email" name="email" id="" placeholder="Email" required>
+                    </fieldset>
+                    <fieldset >
+                        <legend>SUBJECT</legend>
+                        <input type="text" name="subject" id="" placeholder="SUBJECT" required>
+                    </fieldset>
+                    <fieldset >
+                        <legend>MESSAGE</legend>
+                        <textarea name="message" placeholder="MESSAGE" required id=""></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send" class="contactSendButton">
+                </form>
+            </div>
+            <div class="contactRightBox">
+                <div>
+                    <p>Call Us</p><br>
+                    <h5><i class="fa-solid fa-tty"></i> (123)456761</h5><br>
+                    <a href="" class="a">Call Now <i class="fa-solid fa-location-arrow"></i></a>
+                </div><br><br><br><br>
+                <div>
+                    <p>Email Us</p><br>
+                    <h5><i class="fa-solid fa-envelopes-bulk"></i> contact@demo.com</h5><br>
+                    <a href="" class="a">Compose Now <i class="fa-solid fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.51348860333!2d76.8846610521165!3d11.013957741582647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1728941709202!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <nav class="contactFAQ">
+            <h2>Frequently Asked Questions</h2>
+            <div class="FAQdetails">
+                <details>
+                    <summary> What services does your software company offer?</summary>
+                    <p>We specialize in a wide range of services, including custom software development, web and mobile
+                        app development, digital transformation, and software consultancy. Our goal is to provide
+                        tailored solutions that meet the unique needs of your business.</p>
+                </details>
+                <details>
+                    <summary> How does the software development process work?</summary>
+                    <p>Our development process starts with an initial consultation to understand your requirements. We
+                        then move into the design and development phase, followed by rigorous testing. Once approved, we
+                        deploy the solution and provide ongoing support. We keep you informed at each stage to ensure
+                        transparency and quality.</p>
+                </details>
+                <details>
+                    <summary> How long does it take to complete a project?</summary>
+                    <p>The project timeline depends on the complexity and scope of the project. Simple applications may
+                        take a few weeks, while more complex software solutions can take several months. We provide a
+                        project estimate after assessing your requirements.</p>
+                </details>
+                <details>
+                    <summary> Can you develop a mobile app for both iOS and Android platforms?</summary>
+                    <p>Yes, we offer cross-platform and native mobile app development for both iOS and Android
+                        platforms. We use technologies that ensure a smooth experience on all devices and operating
+                        systems.</p>
+                </details>
+                <details>
+                    <summary> How much will my project cost?</summary>
+                    <p>Project costs vary based on the scope, functionality, and technical requirements. We offer an
+                        initial consultation to discuss your vision and provide a detailed quote tailored to your needs
+                        and budget.</p>
+                </details>
+                <details>
+                    <summary> Do you offer post-launch support and maintenance?</summary>
+                    <p>Absolutely! We offer comprehensive post-launch support, including maintenance, updates, and
+                        troubleshooting to ensure your software continues to perform at its best.</p>
+                </details>
+                <details>
+                    <summary> Will I be involved in the development process?</summary>
+                    <p>Yes, we value client involvement. Throughout the project, we provide regular updates, seek your
+                        feedback, and ensure alignment with your expectations. Your insights are crucial in creating the
+                        perfect solution.</p>
+                </details>
+                <details>
+                    <summary> How do you ensure data security in your software solutions?</summary>
+                    <p>We take data security seriously. Our team follows industry best practices and implements advanced
+                        security protocols to protect your data, including data encryption, secure authentication, and
+                        regular security audits.</p>
+                </details>
+            </div><br><br><br><br><br>
+        </nav>
+    </nav>
+    <footer style="padding: 2%;background-color: rgba(3, 20, 43, 0.349);">
+        <div class="footer">
+             <div class="company">
+                 <img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="logo footerLogo">
+                 <p class="footerP">At Techy Software technology, we specialize in crafting custom websites and innovative digital solutions tailored to your business needs.</p>
+                 <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook footerIcon fb" ></i></a>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram footerIcon ig"></i></a>
+                 <a href="https://www.watsappweb.com/"><i class="fa-brands fa-whatsapp footerIcon wa"></i></a>
+                 <a href="https://www.linkedin.com/in/karthik--mohan19/"><i class="fa-brands fa-linkedin footerIcon li"></i></a>
+             </div>
+             <div class="company">
+                 <h4>Company</h4>
+                 <ul>
+                     <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                     <li><a href="{% url 'about' %}" class="a">ABOUT US</a></li>
+                     <li><a href="{% url 'contact' %}" class="a">CONTACT</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Services</h4>
+                 <ul>
+                     <li><a href="{% url 'service' %}" class="a">Custom Software Development</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Web & Mobile Dev</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Cloud Solutions</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Contact Us</h4>
+                 <ul>
+                     <li><p class="a"><i class="fa-solid fa-tty"></i> (123) 456-7890</p></li>
+                     <li><p class="a"><i class="fa-solid fa-envelopes-bulk"></i> contact@demo.com</p></li>
+                     <li><p class="a"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p></li>
+                 </ul>
+             </div>
+        </div><br><br>
+        <div>
+         <p class="copyright">Copyright &copy; 2024 Techy Software | All rights reserved.</p>
+        </div>
+     </footer>
+ 
+     <script src="{% static 'javascript/script.js' %}"></script>
+ 
+ </body>
+</html>

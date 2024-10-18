@@ -1,0 +1,50 @@
+.ourService{
+    background-color: rgb(21, 26, 48);
+    padding: 5% 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.ourService div{
+    border: solid 2px rgba(32, 61, 116, 0.932);;
+    padding: 2%;
+    width: 20%;
+}
+.serviceEvenBox{
+    background-color: rgba(32, 61, 116, 0.932);
+    transform: translateY(30px);
+}
+.ourService div h3{
+    font-size: 40px;
+    font-family: sans-serif;
+    margin: 5% 0;
+}
+.ourService div p{
+    font-size: 20px;
+    color: rgb(178, 179, 180);
+}
+
+@media (max-width:480px),(min-width: 481px) and (max-width: 768px),(min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    .ourService{
+        display: block;
+    }
+    .ourService div{
+        width: 90%;
+        margin: 2%;
+    }
+    .ourService div h3{
+        margin: 2%;
+    }
+    .serviceEvenBox{
+        transform: translateY(0px);
+    }
+}
+@media (min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    .ourService{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .ourService div{
+        width: 40%;
+    }  
+}

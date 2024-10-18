@@ -1,0 +1,33 @@
+ # Python cache files
+__pycache__/
+*.pyc
+
+# SQLite database file
+db.sqlite3
+
+# Environment variables
+.env
+
+# Static files (if collected)
+staticfiles/
+
+# Media files (uploaded files)
+media/
+
+# Log files
+*.log
+
+# Virtual environment
+env/
+venv/
+# If you are using pipenv
+Pipfile.lock
+
+# IDE configurations (optional)
+.idea/
+.vscode/
+
+# Other files to ignore
+*.DS_Store  # macOS specific
+Thumbs.db   # Windows specific
+

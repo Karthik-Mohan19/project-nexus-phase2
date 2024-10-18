@@ -1,0 +1,681 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(1, 8, 17);
+    color: snow;
+}
+
+.navbar {
+    display: flex;
+    padding: 3% 3% 1% 3%;
+    justify-content: space-between;
+    background-color: rgb(1, 8, 17);
+    position: sticky;
+    top: 0%;
+    box-shadow: 5px 5px 20px rgb(1, 1, 14);
+    z-index: 10;
+}
+
+.logo {
+    width: 70%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 20px;
+}
+
+.a {
+    text-decoration: none;
+    color: snow;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.a:hover {
+    color: rgb(8, 77, 206);
+}
+
+.navButton {
+    font-size: 20px;
+    padding: 10px;
+    border: solid 2px rgb(48, 124, 238);
+    text-decoration: none;
+    color: white;
+    background-color: rgb(48, 124, 238);
+    font-weight: bold;
+    border-radius: 24px;
+    box-shadow: inset 0 0 0 0 rgb(1, 8, 17);
+    transition: all 0.5s linear;
+}
+
+.navButton:hover {
+    box-shadow: inset 100px -100px 0 0 rgb(1, 8, 17);
+    color: white;
+}
+
+.headPage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headPageLeft,
+.headPageRight {
+    width: 45%;
+    padding: 5% 0 0 2%;
+}
+
+.headTitle {
+    font-size: 60px;
+    margin: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headSubTitle {
+    font-size: 16px;
+    margin: 5% 0;
+    color: rgb(159, 159, 163);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headNavButton {
+    margin: 12% 5%;
+    padding: 10px 15px;
+    word-spacing: 5px;
+    background-color: white;
+    box-shadow: inset 115px 0 0 0 rgb(1, 8, 17);
+    color: snow;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+    color: rgb(1, 8, 17);
+    margin-left: 10px;
+}
+
+.headNavButton:hover {
+    box-shadow: inset 0px 0px 0 0 white;
+    color: rgb(1, 8, 17);
+}
+
+.image {
+    height: 500px;
+}
+
+.homeHighlight{
+    background-color: rgb(4, 16, 32);
+    padding: 4%;
+    text-align: center;
+    border-radius: 24PX;
+    margin: 5% 1%;
+    word-spacing: 5PX;
+}
+
+.homeHighlights h2 {
+    font-size: 30px;
+}
+
+.wordSuccess {
+    color: rgb(48, 124, 238);
+    font-size: 40px;
+}
+.word100{
+    font-size: 30px;
+}
+.mainService{
+    background: url(../images/service_bg2.jpg);
+    
+    
+}
+.mainService h2, .aboutHighlight, .chooseUsHighlight{
+    font-size: 60px;
+    text-align: center;
+}
+.mainService h3, .aboutSubHighlight, .chooseUsSubHighlight{
+    font-size: 45px;
+    text-align: center;
+}
+.serviceBoxes{
+    display: flex;
+}
+.serviceBox1, .serviceBox2, .serviceBox3{
+    width: 30%;
+    margin: 2%;
+    backdrop-filter: blur(15px);
+    padding: 3%;
+    border: solid 2px white;
+    border-radius: 12px;
+}
+.serviceBox1 h4, .serviceBox2 h4, .serviceBox3 h4{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.serviceBox1 p, .serviceBox2 p, .serviceBox3 p{
+    color: transparent;
+    filter: drop-shadow(10x 1px 10px white);
+    background-color: white;
+    background-clip: text;
+    margin: 5% 0;
+    font-size: 25px;
+}
+.serviceButton{
+    border-radius: 12px;
+}
+.serviceButton:hover{
+    box-shadow: inset 0px 100px 0 0 rgb(1, 8, 17);
+}
+.aboutHighlight, .chooseUsHighlight{
+    margin: 50px;
+    color: rgb(48, 124, 238);
+}
+.aboutContainer{
+    display: flex;
+}
+.aboutGIF img{
+    height: 400px;
+    margin: 5%;
+}
+.aboutContent p{
+    font-size: 20px;
+    width: 80%;
+    margin: 5% 10%;
+    color: rgb(212, 208, 208);
+}
+.ratings{
+    display: flex;
+}
+.ratings div{
+    margin: 2% 7%;
+    padding-left: 3%;
+    font-size: 22px;
+    color: rgb(48, 124, 238);
+    text-align: center;
+}
+.ratings div p{
+    color: rgb(48, 124, 238);
+}
+.mainChooseUs{
+    background-image: url(../images/chooseus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.chooseUsBox{
+    width: 70%;
+    background-color: rgba(240, 248, 255, 0.308);
+    padding: 2%;
+    margin: 2% 5%;
+    border-radius: 24px;
+    transition: all 0.5s ease-in-out;
+}
+.chooseEvenBox{
+    margin: 2% 20%;
+}
+.chooseUsBox:hover{
+    margin: 2% 10%;
+}
+.chooseUsSymbol{
+    background-color: rgb(48, 124, 238);
+    padding: 1%;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+.chooseUsBox h3{
+    font-size: 30px;
+    margin: 0 0 2% 0;
+    font-family: sans-serif;
+}
+.chooseUsBox p{
+    font-size: 20px;
+}
+.testimonialsMainContainer{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.testimonialsContainer{
+    width: 40%;
+    margin: 10% 0 0 3%;
+}
+.testimonialsContainer h2{
+    font-size: 35px;
+    font-family: serif;
+    margin: 2%;
+}
+.testimonialsContainer p{
+    font-size: 20px;
+    color: rgb(219, 220, 221);
+    margin: 2%;
+}
+.testimonialsContainer2{
+    background: linear-gradient(15deg,
+    
+    rgba(50, 125, 236, 0.452),
+    rgba(18, 29, 46, 0.452),
+    rgba(50, 125, 236, 0.452)
+    );
+    box-shadow: 1px 1px 10px rgba(50, 125, 236, 0.452);
+    border-radius: 5% ;
+    width: 40%;
+    margin: 6% 0 0 3%;
+    padding: 6% 8%;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+}
+.testimonialsBox{
+    padding: 2%;
+    position: absolute;
+    opacity: 0;
+    animation: slide-carousel 15s infinite;
+}
+.testimonialsBox:nth-child(1) { animation-delay: 0s; }
+.testimonialsBox:nth-child(2) { animation-delay: 5s; }
+.testimonialsBox:nth-child(3) { animation-delay: 10s; }
+
+@keyframes slide-carousel {
+    0%, 100% { opacity: 0; transform: translateX(100%); }
+    10%, 30% { opacity: 1; transform: translateX(0); }
+    40%, 90% { opacity: 0; transform: translateX(-100%); }
+}
+
+.testimonialsBox h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+    color: rgb(224, 227, 230);
+}
+.testimonialsBox p{
+    font-size: 20px;
+    margin: 2%;
+}
+.marqueeP{
+    font-size: 30px;
+    color: aliceblue;
+    word-spacing: 10px;
+}
+.mainContact{
+    background-image: url(../images/cotact_page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.mainContact div p{
+    font-size: 25px;
+    margin: 5% 20%;
+}
+.mainContactButton{
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+    background-color: rgb(50, 124, 236);
+    margin: 40%;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.mainContactButton:hover{
+    background-color: rgb(34, 93, 182);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.company{
+    width: 25%;
+}
+.footerLogo{
+    margin: 1%;
+}
+.footerP{
+    font-size: 18px;
+    margin: 4% 2%;
+    color: rgb(203, 204, 206);
+
+}
+.footerIcon{
+    font-size: 25px;
+    margin: 1% 5%;
+    color: snow;
+    background-color: transparent;
+    transition: all 0.1s ease-in-out;
+}
+.fb{
+    margin: 1% 1% 1% 3%;
+}
+.footerIcon:hover{
+    scale: 1.1;
+}
+.fb:hover{
+    color: rgb(8, 71, 153);
+}
+.wa:hover{
+    color: rgb(72, 228, 72);
+}
+.ig:hover{
+    background: linear-gradient(
+        to bottom,
+        rgb(238, 35, 187),
+        rgb(243, 45, 45),
+        rgb(228, 152, 12)
+    );
+    background-clip: text;
+    color: transparent;
+}
+.li:hover{
+    color: rgb(14, 101, 214);
+}
+.company ul{
+    list-style: none;
+    margin: 10px 1%;
+}
+.company ul li{
+    margin: 10px;
+}
+.company h4{
+    font-size: 30px;
+    margin: 15px 1%;
+}
+.copyright{
+    color: snow;
+    font-size: 20px;
+    padding: 2%;
+    background-color: rgba(240, 246, 255, 0.017);
+    margin: 2% 5%;
+    box-shadow: 1px 1px 10px rgb(39, 39, 48);
+    text-align: center;
+}
+nav .fas{
+    display: none;
+    color: snow;
+}
+
+@media (max-width:480px),(min-width: 481px) and (max-width: 768px),(min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        color: snow;
+    }
+    
+    .logo {
+        width: 80%;
+    }
+    .menu ul {
+        margin: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -240px;
+        width: 240px;
+        height: 100vh;
+        background-color: rgb(1, 8, 17);
+        padding-top: 50px;
+        z-index: 12;
+        transition: right 0.5s ease-in-out;
+    }
+    
+    .menu ul li {
+        margin: 20px;
+    }
+    
+    .navButton {
+        display: none;
+    }
+    .headPage {
+        display: block;
+    }
+    
+    .headPageLeft,
+    .headPageRight {
+        width: 95%;
+    }
+    
+    .headTitle {
+        font-size: 30px;
+    }
+    .headSubTitle {
+        font-size: 13px;
+        margin: 5% 0;
+        color: rgb(159, 159, 163);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .headNavButton {
+        display: block;
+        margin: 12% 5%;
+        padding: 10px 15px;
+        word-spacing: 5px;
+        background-color: white;
+        box-shadow: inset 115px 0 0 0 rgb(1, 8, 17);
+        color: snow;
+        width: 130PX;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .arrow {
+        color: rgb(1, 8, 17);
+        margin-left: 10px;
+    }
+    
+    .image {
+        height: auto;
+        width: 90%;
+    }
+    
+    
+    .homeHighlights h2 {
+        font-size: 30px;
+    }
+    
+    .wordSuccess {
+        color: rgb(48, 124, 238);
+        font-size: 20px;
+    }
+    .word100{
+        font-size: 15px;
+    }
+    .mainService h2, .aboutHighlight, .chooseUsHighlight{
+        font-size: 40px;
+    }
+    .mainService h3, .aboutSubHighlight, .chooseUsSubHighlight{
+        font-size: 25px;
+        text-align: center;
+    }
+    .serviceBoxes{
+        display: block;
+    }
+    .serviceBox1, .serviceBox2, .serviceBox3{
+        width: 90%;
+    }
+    .serviceBox1 h4, .serviceBox2 h4, .serviceBox3 h4{
+        font-size: 30px;
+    }
+    .serviceButton{
+        display: block;
+    }
+    .serviceButton:hover{
+        box-shadow: inset 0px 100px 0 0 rgb(1, 8, 17);
+    }
+
+    .aboutContainer{
+        display: block;
+    }
+    .aboutHighlight, .chooseUsHighlight{
+        margin: 40px;
+    }
+    .aboutGIF img{
+        height: 300px;
+        margin: 5%;
+    }
+    .aboutContent p{
+        width: 90%;
+    }
+    .ratings div{
+        margin: 2%;
+        padding-left: 3%;
+        font-size: 15px;
+        color: rgb(48, 124, 238);
+        text-align: center;
+    }
+    .mainChooseUs{
+        background-image: url(../images/chooseus.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .chooseUsBox{
+        width: 90%;
+        background-color: rgba(240, 248, 255, 0.308);
+        padding: 2%;
+        margin: 2% 5%;
+        border-radius: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+    .chooseEvenBox{
+        margin: 5%;
+    }
+    .chooseUsBox:hover{
+        margin: 5%;
+    }
+    .testimonialsMainContainer{
+        display: block;
+    }
+    .testimonialsContainer{
+        width: 90%;
+    }
+    
+    .testimonialsContainer2{
+        background-color: rgba(50, 125, 236, 0.452);
+        border-radius: 5% ;
+        width: 80%;
+        margin: 6% 0 0 3%;
+        padding: 10% 8% 50%;
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+        display: flex;
+    }
+    .marqueeImages img{
+        margin: 10%;
+    }
+    .mainContact div p{
+        margin: 5%;
+    }
+    .mainContactButton{
+        font-size: 20px;
+        padding: 5px;
+        margin: 10%;
+    }
+    
+    .company{
+        width: 90%;
+    }
+    .footerLogo{
+        margin: 1%;
+        width: 90%;
+    } 
+}
+
+@media (min-width: 481px) and (max-width: 768px),(min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    .testimonialsContainer2{
+        padding: 5%;
+    }
+    .company{
+        width: 50%;
+    }
+    .testimonialsContainer2{
+        padding: 5%;
+    }
+    .headTitle {
+        font-size: 60px;
+    }
+    .headSubTitle {
+        font-size: 20px;
+        
+    }
+    .homeHighlights h2 {
+        font-size: 50px;
+    }
+    
+    .wordSuccess {
+        font-size: 40px;
+    }
+    .word100{
+        font-size: 30px;
+    }
+    .mainService h2, .aboutHighlight, .chooseUsHighlight{
+        font-size: 60px;
+    }
+    .mainService h3, .aboutSubHighlight, .chooseUsSubHighlight{
+        font-size: 35px;
+    }
+    
+    .serviceBox1 h4, .serviceBox2 h4, .serviceBox3 h4{
+        font-size: 40px;
+    }
+    
+    .aboutHighlight, .chooseUsHighlight{
+        margin: 40px;
+    }
+    .aboutGIF img{
+        height: 300px;
+        margin: 5%;
+    }
+    .aboutContent p{
+        width: 90%;
+    }
+    .chooseEvenBox{
+        margin: 5%;
+    }
+    
+    .testimonialsContainer2{
+        padding: 5%;
+    }
+    .mainContact div p{
+        margin: 5%;
+    }
+    
+    
+    .company{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768.1px) and (max-width: 991.98px),(min-width: 992px) and (max-width: 1199.98px) {
+    .aboutContainer{
+        display: flex;
+    }
+    .mainContactButton{
+        font-size: 20px;
+        padding: 15px;
+        margin: 40%;
+    }
+}
+
+@media  (min-width: 992px) and (max-width: 1199.98px) {
+    .headPage{
+        display: flex;
+    }
+    .testimonialsMainContainer{
+        display: flex;
+    }
+    .company{
+        width: 30%;
+    }
+}

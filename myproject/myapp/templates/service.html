@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Techy Software Industry - Tailored Software Solutions</title>
+  <meta name="description" content="Explore the range of software solutions offered by Techy Software Industry, including custom development, consulting, and digital transformation." />
+
+  <meta property="og:title" content="Our Services at Techy Software Industry" />
+  <meta property="og:description" content="Discover our software services designed to meet the unique needs of businesses and support digital transformation." />
+  <meta property="og:image" content="https://yourwebsite.com/images/services-page.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com/services" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/service.css' %}">
+
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar">
+            <div><img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="logo"></div>
+            <nav class="menu">
+                <ul id="menubar" class="menubar">
+                    <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                    <li><a href="{% url 'about' %}" class="a">ABOUT US</a></li>
+                    <li><a href="#" class="a">SERVICES</a></li>
+                    <li><a href="{% url 'contact' %}" class="a">CONTACT</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div><a href="" class="navButton">Get a Quote</a></div>
+        </nav>
+        <nav class="aboutMain">
+            <h2>SERVICES</h2>
+            <h4>Empowering your business with innovative software solutions designed to enhance efficiency, productivity, and growth.</h4>
+        </nav>
+        <nav>
+            <div style="background-color: rgba(19, 19, 19, 0.055);">
+                <marquee behavior="scroll" direction="" scrollamount="16" loop="infinite">
+                    <div style="display: flex;justify-content: space-evenly;">
+                        <p class="marqueeP">✨ Custom Software Development </p>
+                        <p class="marqueeP">✨ Cloud Solutions </p>
+                        <p class="marqueeP">✨ Data Management & Analytics </p>
+                        <p class="marqueeP">✨ Machine Learning & AI ✨</p>
+                    </div>
+                </marquee>
+            </div><br><br><br>
+            <div style="background-color: rgba(19, 19, 19, 0.055);">
+                <marquee behavior="" direction="right" scrollamount="16" loop="infinite">
+                    <div style="display: flex;justify-content: space-evenly;">
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/django.png" alt="django"/>
+                        <img width="80" height="80" src="https://img.icons8.com/officel/80/react.png" alt="react"/>
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/shopify.png" alt="shopify"/>
+                        <img width="80" height="80" src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db"/>
+                    </div>
+                </marquee>
+            </div><br><br><br>
+            <div style="background-color: rgba(19, 19, 19, 0.055);">
+                <marquee behavior="" direction="" scrollamount="16" loop="infinite">
+                    <div style="display: flex;justify-content: space-evenly;">
+                        <p class="marqueeP">✨ Digital Marketing & SEO </p>
+                        <p class="marqueeP">✨ UI/UX Design </p>
+                        <p class="marqueeP">✨ E-commerce Development </p>
+                        <p class="marqueeP">✨ DevOps & Automation ✨</p>
+                    </div>
+                </marquee>
+            </div>
+        </nav>
+        <nav class="mainService">
+            <div style="background-color: rgba(0, 0, 0, 0.425);"><br><br><br>
+                <h2>Our Software Services</h2><br><br>
+                <h3><span>Transforming</span> Ideas into Innovative Solutions</h3><br><br>
+                <div class="serviceBoxes">
+                    <div class="serviceBox1">
+                        <h4>Custom Software Development</h4>
+                        <p>Unlock your business's potential with our bespoke software solutions. We specialize in
+                            creating robust applications tailored to your specific requirements, driving efficiency and
+                            enhancing productivity.</p>
+                        <br><br><a href="" class="navButton serviceButton">Get a Quote</a>
+                    </div>
+                    <div class="serviceBox2">
+                        <h4>Web and Mobile Application Development</h4>
+                        <p>Elevate user engagement with our cutting-edge web and mobile applications. We design
+                            responsive, intuitive interfaces that deliver seamless experiences across all devices,
+                            helping you connect with your audience like never before.</p>
+                        <br>
+                        <br<a href="" class="navButton serviceButton">Get a Quote</a>
+                    </div>
+                    <div class="serviceBox3">
+                        <h4>Cloud Solutions</h4>
+                        <p>Future-proof your operations with our advanced cloud solutions. We provide secure, scalable,
+                            and flexible cloud services that streamline processes and optimize performance, enabling
+                            your business to thrive in a digital landscape.</p>
+                        <br>
+                        <br<a href="" class="navButton serviceButton">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="ourService">
+            <div>
+                <h3>Our Process</h3>
+                <p>Transparency and collaboration are key to delivering successful projects. Our process is designed to keep you involved every step of the way, from initial discovery and planning to development, testing, and deployment. We prioritize your feedback and ensure every detail aligns with your goals.</p>
+            </div>
+            <div class="serviceEvenBox" >
+                <h3>Our Team</h3>
+                <p>Behind every great solution is a team of passionate professionals. Our skilled developers, designers, and strategists bring expertise, creativity, and a drive for excellence to every project. Meet the people dedicated to helping your business thrive.</p>
+            </div>
+            <div>
+                <h3>Partnerships and Affiliations</h3>
+                <p>We are proud to partner with leading tech providers, cloud platforms, and industry associations, allowing us to offer the best solutions and resources to our clients. Our partnerships strengthen our ability to deliver top-notch services and stay at the forefront of innovation.</p>
+            </div>
+            <div class="serviceEvenBox" >
+                <h3>Sustainability and Social Responsibility</h3>
+                <p>We believe in making a positive impact beyond our services. Our commitment to sustainability and responsible business practices extends to everything we do. Learn more about how we work to create solutions that are environmentally friendly and socially conscious.</p>
+            </div>
+        </nav>
+        <nav class="testimonials">
+            <div><br><br><br>
+                <h2 class="aboutHighlight">Testimonials</h2>
+                <h3 class="aboutSubHighlight">What Our Clients Say About Techy Software Industry</h3>
+                <div class="testimonialsMainContainer">
+                    <div class="testimonialsContainer">
+                        <h2>Empowering Growth with Innovative Solutions</h2>
+                        <p>Techy Software Industry has empowered us to expand and streamline. Their team’s commitment to
+                            understanding our needs and delivering reliable solutions is unmatched.</p>
+                    </div>
+                    <div class="testimonialsContainer2">
+
+                        <div class="testimonialsBox testimonialsBox1">
+                            <h4>Techy Software Industry has been a game-changer for our business. Their customized
+                                software solutions streamlined our operations, allowing us to focus on growth. The
+                                team’s dedication and expertise are unmatched!</h4>
+                            <p>— Alex M</p>
+                        </div>
+
+                        <div class="testimonialsBox testimonialsBox2">
+                            <h4>The team at Techy Software Industry didn’t just meet our needs—they anticipated them. Their software solutions have improved our productivity, and their support has been consistently outstanding.</h4>
+                            <p>— Sarah L</p>
+                        </div>
+                        <div class="testimonialsBox testimonialsBox3">
+                            <h4>Partnering with Techy Software Industry has given us the tools to stay competitive and efficient. Their commitment to quality and innovation has made a profound impact on our business.</h4>
+                            <p>— James R.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="aboutContact">
+            <h2>Free consultation available <span><a href="{% url 'contact' %}" class="aboutContactButton">Get In Touch</a><br><br><br></span></h2>
+            
+        </nav>
+    </nav>
+    <footer style="padding: 2%;background-color: rgba(3, 20, 43, 0.349);">
+        <div class="footer">
+             <div class="company">
+                 <img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="logo footerLogo">
+                 <p class="footerP">At Techy Software technology, we specialize in crafting custom websites and innovative digital solutions tailored to your business needs.</p>
+                 <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook footerIcon fb" ></i></a>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram footerIcon ig"></i></a>
+                 <a href="https://www.watsappweb.com/"><i class="fa-brands fa-whatsapp footerIcon wa"></i></a>
+                 <a href="https://www.linkedin.com/in/karthik--mohan19/"><i class="fa-brands fa-linkedin footerIcon li"></i></a>
+             </div>
+             <div class="company">
+                 <h4>Company</h4>
+                 <ul>
+                     <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                     <li><a href="{% url 'about' %}" class="a">ABOUT US</a></li>
+                     <li><a href="{% url 'contact' %}" class="a">CONTACT</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Services</h4>
+                 <ul>
+                     <li><a href="{% url 'service' %}" class="a">Custom Software Development</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Web & Mobile Dev</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Cloud Solutions</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Contact Us</h4>
+                 <ul>
+                     <li><p class="a"><i class="fa-solid fa-tty"></i> (123) 456-7890</p></li>
+                     <li><p class="a"><i class="fa-solid fa-envelopes-bulk"></i> contact@demo.com</p></li>
+                     <li><p class="a"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p></li>
+                 </ul>
+             </div>
+        </div><br><br>
+        <div>
+         <p class="copyright">Copyright &copy; 2024 Techy Software | All rights reserved.</p>
+        </div>
+     </footer>
+ 
+     <script src="{% static 'javascript/script.js' %}"></script>
+ 
+ </body>
+</html>

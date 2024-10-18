@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Techy Software Industry - Innovative Software Solutions</title>
+    <meta name="description" content="Learn about Techy Software Industry's mission, values, and our dedicated team working to deliver innovative software solutions." />
+
+    <meta property="og:title" content="About Techy Software Industry" />
+  <meta property="og:description" content="Discover our mission, values, and the team that drives Techy Software Industry's success in innovative technology." />
+  <meta property="og:image" content="https://yourwebsite.com/images/about-page.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com/about" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar">
+            <div><img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="Logo of Techy Software Industry displayed at a tech conference."></div>
+            <nav class="menu">
+                <ul id="menubar" class="menubar">
+                    <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                    <li><a href="#" class="a">ABOUT US</a></li>
+                    <li><a href="{% url 'service' %}" class="a">SERVICES</a></li>
+                    <li><a href="{% url 'contact' %}" class="a">CONTACT</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div><a href="" class="navButton">Get a Quote</a></div>
+        </nav>
+        <nav class="aboutMain">
+            <h2>ABOUT US</h2>
+            <h4>Where creativity meets technology, and every solution is designed to empower your business.</h4>
+        </nav>
+        <nav class="aboutWelcomePage">
+            <div><br><br>
+                <h3>Welcome to Techy Software Technology</h3>
+                <p>where technology meets innovation. We are a dynamic software development company specializing in building customized digital solutions to help businesses thrive in the modern world. Our team of skilled developers, designers, and strategists are passionate about creating impactful software that empowers companies to meet their goals with confidence.</p><br>
+                <h3 style="color: rgb(48, 124, 238);">Our Mission</h3>
+                <p>At Techy Software Technology, our mission is simple: to deliver exceptional software solutions that drive growth, efficiency, and innovation for our clients. Whether it’s web applications, mobile platforms, or enterprise software, we prioritize quality, reliability, and client satisfaction in everything we do.</p>
+            </div>
+            <div>
+                <img src="{% static 'images/about_main.png' %}" alt="Group of professionals engaged in a project discussion, representing the collaborative work culture at Techy Software Industry.">
+            </div>
+        </nav>
+        <nav>
+            <div class="aboutContainer">
+                <div class="aboutGIF">
+                    <img src="{% static 'images/software_about.gif' %}" alt="Team of mobile professionals working together, showcasing the collaborative culture at Techy Software Industry.">
+                </div>
+                <div class="aboutContent">
+                    <p>At Techy Software, we bring innovative software solutions that drive business success,
+                        turning visions into reality through cutting-edge technology. Our expert team partners with
+                        clients worldwide, delivering scalable, reliable software tailored to boost productivity and
+                        enhance customer engagement. With over 100 projects completed and 50+ clients served, we’re
+                        dedicated to providing 24/7 support, ensuring seamless growth every step of the way.</p>
+                    <div class="ratings">
+                        <div>
+                            <h2>100+</h2>
+                            <p>Successful Projects</p>
+                        </div>
+                        <div>
+                            <h2>50+</h2>
+                            <p>Satisfied Clients</p>
+                        </div>
+                        <div>
+                            <h2>24/7</h2>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="mainChooseUs">
+            <div style="background-color: rgba(0, 0, 0, 0.425);"><br><br><br>
+                <h2 class="chooseUsHighlight" style="color: rgb(197, 214, 247);">Why Choose Us</h2>
+                <h3 class="chooseUsSubHighlight">Empowering Your Vision Through Innovation</h3>
+                <div class="chooseUsBox">
+                    <h3><span class="chooseUsSymbol"><i class="fa-solid fa-people-group"></i></span>Experienced Team
+                    </h3>
+                    <p>Our skilled team combines expertise in the latest technologies with a passion for innovation,
+                        delivering solutions that drive impactful results. We stay ahead of industry trends to offer
+                        forward-thinking approaches tailored to your needs, ensuring both immediate impact and lasting
+                        success.</p>
+                </div>
+                <div class="chooseUsBox chooseEvenBox" style="background-color: rgba(41, 145, 243, 0.63);;">
+                    <h3><span class="chooseUsSymbol"><i class="fa-solid fa-handshake"></i></span>Client-Centric Approach
+                    </h3>
+                    <p>At Techy Software, your goals drive our mission. We craft tailored solutions that align perfectly
+                        with your business needs. Our team collaborates closely with you, addressing every detail.
+                        Together, we pave the way for your success through personalized support.</p>
+                </div>
+                <div class="chooseUsBox ">
+                    <h3><span class="chooseUsSymbol"><i class="fa-solid fa-headset"></i></span>24/7 Support</h3>
+                    <p>Our commitment extends beyond business hours, ensuring you have support whenever you need it.
+                        With our team available 24/7, we guarantee timely assistance and troubleshooting. Your
+                        operations will run smoothly without interruption. Your peace of mind is our priority as you
+                        focus on growing your business.</p>
+                </div>
+                <div class="chooseUsBox chooseEvenBox">
+                    <h3><span class="chooseUsSymbol"><i class="fa-solid fa-ranking-star"></i></span>Proven Track Record
+                    </h3>
+                    <p>We pride ourselves on a proven track record with over 50 satisfied clients and 100+ successful
+                        projects. Our focus is on delivering high-quality solutions that drive measurable outcomes.
+                        Choose Techy Software for excellence and reliability in every endeavor. You can trust us to
+                        deliver results time and time again.</p>
+                </div>
+            </div>
+        </nav>
+        <nav ><br><br><br>
+            <h2 class="aboutTestimonials">Testimonials</h2>
+            <div class="testimonialsMainContainer">
+                <div class="testimonialsContainer">
+                    <h2>Empowering Growth with Innovative Solutions</h2>
+                    <p>Techy Software Industry has empowered us to expand and streamline. Their team’s commitment to
+                        understanding our needs and delivering reliable solutions is unmatched.</p>
+                </div>
+                <div class="testimonialsContainer2">
+
+                    <div class="testimonialsBox testimonialsBox1">
+                        <h4>Techy Software Industry has been a game-changer for our business. Their customized
+                            software solutions streamlined our operations, allowing us to focus on growth. The
+                            team’s dedication and expertise are unmatched!</h4>
+                        <p>— Alex M</p>
+                    </div>
+
+                    <div class="testimonialsBox testimonialsBox2">
+                        <h4>The team at Techy Software Industry didn’t just meet our needs—they anticipated them. Their software solutions have improved our productivity, and their support has been consistently outstanding.</h4>
+                        <p>— Sarah L</p>
+                    </div>
+                    <div class="testimonialsBox testimonialsBox3">
+                        <h4>Partnering with Techy Software Industry has given us the tools to stay competitive and efficient. Their commitment to quality and innovation has made a profound impact on our business.</h4>
+                        <p>— James R.</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="aboutContact">
+            <h2>Free consultation available <span><a href="{% url 'contact' %}" class="aboutContactButton">Get In Touch</a><br><br><br></span></h2>
+            
+        </nav>
+    </nav>
+    <footer style="padding: 2%;background-color: rgba(3, 20, 43, 0.349);">
+        <div class="footer">
+             <div class="company">
+                 <img src="{% static 'images/Software_logo.png' %}" alt="LOGO" class="logo footerLogo">
+                 <p class="footerP">At Techy Software technology, we specialize in crafting custom websites and innovative digital solutions tailored to your business needs.</p>
+                 <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook footerIcon fb" ></i></a>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram footerIcon ig"></i></a>
+                 <a href="https://www.watsappweb.com/"><i class="fa-brands fa-whatsapp footerIcon wa"></i></a>
+                 <a href="https://www.linkedin.com/in/karthik--mohan19/"><i class="fa-brands fa-linkedin footerIcon li"></i></a>
+             </div>
+             <div class="company">
+                 <h4>Company</h4>
+                 <ul>
+                     <li><a href="{% url 'home' %}" class="a">HOME</a></li>
+                     <li><a href="{% url 'about' %}" class="a">ABOUT US</a></li>
+                     <li><a href="{% url 'contact' %}" class="a">CONTACT</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Services</h4>
+                 <ul>
+                     <li><a href="{% url 'service' %}" class="a">Custom Software Development</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Web & Mobile Dev</a></li>
+                     <li><a href="{% url 'service' %}" class="a">Cloud Solutions</a></li>
+                 </ul>
+             </div>
+             <div class="company">
+                 <h4>Contact Us</h4>
+                 <ul>
+                     <li><p class="a"><i class="fa-solid fa-tty"></i> (123) 456-7890</p></li>
+                     <li><p class="a"><i class="fa-solid fa-envelopes-bulk"></i> contact@demo.com</p></li>
+                     <li><p class="a"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu</p></li>
+                 </ul>
+             </div>
+        </div><br><br>
+        <div>
+         <p class="copyright">Copyright &copy; 2024 Techy Software | All rights reserved.</p>
+        </div>
+     </footer>
+ 
+     <script src="{% static 'javascript/script.js' %}"></script>
+ 
+ </body>
+</html>

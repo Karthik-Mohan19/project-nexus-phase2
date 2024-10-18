@@ -1,0 +1,136 @@
+.contactMain{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.contactMain div{
+    width: 40%;
+}
+.contactMain div h3{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 2%;
+}
+.contactMain div p{
+    font-size: 30px;
+    font-family: serif;
+    margin: 2%;
+    color: rgb(211, 213, 214);
+}
+.contactMain div fieldset{
+    margin: 4%;
+    border: none;
+}
+.contactMain div legend{
+    font-size: 20px;
+
+}
+.contactMain div fieldset input, .contactSendButton, .contactMain div fieldset textarea{
+    font-size: 20px;
+    background-color: rgba(77, 75, 75, 0.24);
+    color: snow;
+    font-family: sans-serif;
+    padding: 5% 2%;
+    width: 90%;
+    border-radius: 12px;
+    border: none;
+    border-bottom: solid 2px rgba(8, 77, 206, 0.932);
+    transition: all 0.3s ease-in-out;
+}
+.contactMain div fieldset textarea{
+    height: 10rem;
+}
+.contactMain div fieldset input:focus{
+    outline: none;
+    border-left: solid 2px rgba(8, 77, 206, 0.932);
+    border-right: solid 2px rgba(8, 77, 206, 0.932);
+}
+.contactSendButton{
+    width: 50%;
+    background-color: snow;
+    color: rgba(8, 77, 206, 0.932);
+    margin: 4%;
+    padding: 3%;
+    box-shadow: inset 0 0 0 0 rgba(8, 77, 206, 0.932);
+    transition: all 0.5s ease-in-out;
+}
+.contactSendButton:hover{
+    box-shadow: inset 300px 0px 0 0 rgba(8, 77, 206, 0.932);
+    color: snow;
+    
+}
+.contactRightBox{
+    width: 40;
+    margin: 10% 0;
+}
+.contactRightBox div{
+    width: 100%;
+}
+.contactRightBox p{
+    font-size: 15px;
+    margin: 0%;
+}
+.contactRightBox h5{
+    font-size: 30px;
+}
+.contactRightBox a{
+    background-color: rgba(33, 67, 177, 0.164);
+    border: solid 2px rgb(33, 66, 177);
+    padding: 10px;
+    border-radius: 12px;
+}
+.contactFAQ h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 4%;
+}
+.FAQdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.FAQdetails details{
+    background-color: rgba(8, 77, 206, 0.068);
+    font-size: 30px;
+    width: 40%;
+    padding: 2%;
+    margin: 1%;
+    font-family: serif;
+}
+.FAQdetails details p{
+    color: rgb(163, 164, 165);
+    font-size: 20px;
+    margin: 2%;
+}
+
+@media (max-width:480px) {
+    .contactMain{
+        display: block;
+    }
+    .contactMain div{
+        width: 90%;
+    }
+    .contactMain div h3{
+        font-size: 40px;
+    }
+    .contactMain div p{
+        font-size: 20px;
+    }
+    .contactRightBox p{
+        font-size: 25px;
+    }
+    
+    .contactFAQ h2{
+        font-size: 30px;
+        text-align: center;
+        font-family: sans-serif;
+        margin: 4%;
+    }
+    .FAQdetails details{
+        width: 90%;
+    }
+    .FAQdetails details{
+        margin: 2%;
+    }
+}
