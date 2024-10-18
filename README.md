@@ -25,10 +25,10 @@ To set up the project locally, follow these steps:
     ```
 2. **Navigate to the project folder**:
    ```bash
-    cd project-nexus
+    cd project-nexus-phase2
     ```
    ```bash
-    cd Restaurant_project
+    cd myproject
     ```
 4. **Install dependencies**:
     Make sure to have `pip` installed and run:
