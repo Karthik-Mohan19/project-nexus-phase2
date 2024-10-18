@@ -462,14 +462,14 @@ nav .fas{
         padding: 10px 15px;
         word-spacing: 5px;
         background-color: white;
-        box-shadow: inset 115px 0 0 0 rgb(1, 8, 17);
+        box-shadow: inset 205px 0 0 0 rgb(1, 8, 17);
         color: snow;
         width: 130PX;
         transition: all 0.3s ease-in-out;
     }
     
     .arrow {
-        color: rgb(1, 8, 17);
+        color: snow;
         margin-left: 10px;
     }
     
