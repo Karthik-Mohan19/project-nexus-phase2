@@ -44,3 +44,6 @@ To set up the project locally, follow these steps:
     python manage.py runserver
     ```
 7. Open your browser and navigate to `http://127.0.0.1:8000/`.
+
+## License
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
